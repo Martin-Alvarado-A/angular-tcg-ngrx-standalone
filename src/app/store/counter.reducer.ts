@@ -7,6 +7,6 @@ const initialState = 0;
 /**
  * Old original way to create a reducer.
  */
-export function counterReducer(state = initialState) {
+export function counterReducer(state = initialState): number {
   return initialState;
 }

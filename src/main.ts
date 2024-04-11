@@ -3,6 +3,10 @@ import { provideStore } from '@ngrx/store';
 import { AppComponent } from './app/app.component';
 import { counterReducer } from './app/store/counter.reducer';
 
+export type CounterStore = {
+  counter: number;
+};
+
 bootstrapApplication(AppComponent, {
   providers: [provideStore({ counter: counterReducer })],
 });
