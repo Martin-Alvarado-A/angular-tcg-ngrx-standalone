@@ -10,6 +10,10 @@ export const decrement = createAction(
   props<{ value: number }>()
 );
 
+export const init = createAction('[Counter] init');
+
+export const set = createAction('[Counter] set', props<{ value: number }>());
+
 // export const INCREMENT = '[Counter] Increment';
 
 // export class IncrementAction implements Action {
